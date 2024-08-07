@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('model.pkl')
+model = joblib.load('best_model.pkl')
 
 @app.route('/predict', methods=['POST'])
 def predict():
